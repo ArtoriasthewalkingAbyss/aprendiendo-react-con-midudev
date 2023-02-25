@@ -37,5 +37,5 @@ export function TwitterFollowCard ({ children, userName, initialIsFollowing }) {
                 </button>
             </aside>
         </article>
-        )
-    }
+    )
+}

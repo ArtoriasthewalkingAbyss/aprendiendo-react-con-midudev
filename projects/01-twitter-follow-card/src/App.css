@@ -1,3 +1,37 @@
+.tw-icon {
+    width: 1.75rem;
+
+}
+.tw-TweetCard {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    justify-content: space-between;
+}
+
+.tw-TweetCard-header {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.tw-TweetCard-avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+
+.tw-TweetCard-info {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.tw-TweetCard-infoUserName {
+    opacity: .6;
+}
+
 .tw-followCard {
     display: flex;
     align-items: center;
