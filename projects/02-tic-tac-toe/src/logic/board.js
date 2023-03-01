@@ -1,18 +1,17 @@
-import { WINNER_COMBOS } from "../constants.js"
+import { WINNER_COMBOS } from '../constants.js'
 
 const checkWinnerFrom = (boardToCheck) => {
-    for (const combo of WINNER_COMBOS) {
-        const [a, b, c] = combo
-        if (boardToCheck[a] && boardToCheck[a] == boardToCheck[b] && boardToCheck[a] == boardToCheck[c]){
-        return boardToCheck[a]
-        }
+  for (const combo of WINNER_COMBOS) {
+    const [a, b, c] = combo
+    if (boardToCheck[a] && boardToCheck[a] === boardToCheck[b] && boardToCheck[a] === boardToCheck[c]) {
+      return boardToCheck[a]
     }
-    return null
+  }
+  return null
 }
 
 const checkEndGameFrom = (newBoard) => {
-    return newBoard.every((square) => square !== null)
+  return newBoard.every((square) => square !== null)
 }
 
-
-export {checkWinnerFrom, checkEndGameFrom}
+export { checkWinnerFrom, checkEndGameFrom }
