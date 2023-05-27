@@ -39,3 +39,26 @@
 .read-the-docs {
   color: #888;
 }
+
+.GameMenu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.GameItem {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.GameItem img {
+  width: 10%;
+  height: 10%;
+  border-radius: 5px;
+}
+
+.GameItem h3 {
+  margin-top: 10px;
+}
