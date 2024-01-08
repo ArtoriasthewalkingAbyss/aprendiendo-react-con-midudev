@@ -83,46 +83,46 @@ export function App () {
     <>
       <header role='banner' className='header-'>
         {
-                    nav.map(({ icon, link, name }) => (
+          nav.map(({ icon, link, name }) => (
 
-                      <TwitterHeaderMenu
-                        key={name}
-                        icon={icon}
-                        link={link}
-                        name={name}
-                      />
-                    ))
-                }
+            <TwitterHeaderMenu
+              key={name}
+              icon={icon}
+              link={link}
+              name={name}
+            />
+          ))
+        }
       </header>
 
       <main>
         <section>
           {
-                        users.map(({ userName, name }) => (
-                          <TwitterTweetCard
-                            key={userName}
-                            userName={userName}
-                          >
-                            {name}
-                          </TwitterTweetCard>
-                        ))
-                    }
+            users.map(({ userName, name }) => (
+              <TwitterTweetCard
+                key={userName}
+                userName={userName}
+              >
+                {name}
+              </TwitterTweetCard>
+            ))
+          }
         </section>
 
         <section />
 
         <section className='App'>
           {
-                        users.map(({ userName, name, isFollowing }) => (
-                          <TwitterFollowCard
-                            key={userName}
-                            userName={userName}
-                            initialIsFollowing={isFollowing}
-                          >
-                            {name}
-                          </TwitterFollowCard>
-                        ))
-                    }
+            users.map(({ userName, name, isFollowing }) => (
+              <TwitterFollowCard
+                key={userName}
+                userName={userName}
+                initialIsFollowing={isFollowing}
+              >
+                {name}
+              </TwitterFollowCard>
+            ))
+          }
         </section>
       </main>
     </>

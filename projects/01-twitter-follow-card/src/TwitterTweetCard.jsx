@@ -7,7 +7,7 @@ export function TwitterTweetCard ({ children, userName}) {
             <header className='tw-TweetCard-header'>
                 <img
                     className='tw-TweetCard-avatar'
-                    alt="El avatar de midudev"
+                    alt={`El avatar de ${userName}`}
                     src={`https://unavatar.io/${userName}`} />
             
                 <div className="tw-TweetCard-info">
